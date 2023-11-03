@@ -34,7 +34,7 @@ endfunction()
 # List of files to include, in order, in the script file.
 function(generate_script)
   set(options)
-  set(oneValueArgs VERSION SCRIPT OUTPUT_DIRECTORY)
+  set(oneValueArgs VERSION SCRIPT OUTPUT_FOLDER)
   set(multiValueArgs FILES)
   cmake_parse_arguments(_generate "${options}" "${oneValueArgs}"
                         "${multiValueArgs}" ${ARGN})
